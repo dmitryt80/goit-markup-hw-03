@@ -18,6 +18,8 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -28,6 +30,12 @@ body {
   color: var(--main-text-color);
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
 .container {
   width: 1200px;
   padding: 15px;
@@ -92,6 +100,15 @@ body {
   text-decoration: none;
 }
 
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin-top: 30;
+  margin-right: 30;
+}
 .logo {
   font-family: Raleway;
   font-weight: bold;
@@ -127,6 +144,21 @@ body {
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--page-title);
+}
+
+.button-list {
+  display: flex;
+  justify-content: center;
+}
+
+.container-filters {
+  width: 611px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-filters {
 }
 
 .hero {
@@ -181,7 +213,12 @@ body {
   color: var(--title-color);
 }
 
-.text-features {
+.team-item {
+  flex-basis: calc((100% - 3 * 30px) / 4);
+  text-align: center;
+}
+
+.team-item-position {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -191,7 +228,7 @@ body {
   color: var(--main-text-color);
 }
 
-.section-title {
+.team-item-name {
   font-family: var(--title-font);
   font-size: 36px;
   line-height: 1.16;
