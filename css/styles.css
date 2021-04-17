@@ -38,7 +38,7 @@ p {
 }
 .container {
   width: 1200px;
-  padding: 15px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -51,6 +51,7 @@ p {
 }
 
 .nav {
+  margin-top: 32px;
   margin-right: auto;
 }
 .contacts {
@@ -60,6 +61,7 @@ p {
 }
 
 .contacts-item {
+  margin-top: 32px;
   margin-left: 50px;
 }
 
@@ -171,7 +173,7 @@ p {
   display: flex;
   align-items: center;
   width: 1600px;
-  margin-bottom: 94px;
+  padding: 200px 0;
   background-color: #2f303a;
 }
 
@@ -187,6 +189,8 @@ p {
   background-color: var(--accent-color);
   display: block;
   margin: 0 auto;
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 
 .button {
@@ -205,7 +209,7 @@ p {
 }
 
 .page-title {
-  margin: 452px, 200px, 280px;
+  max-width: 696px;
   font-family: var(--title-font);
   font-size: 44px;
   line-height: 1.36;
@@ -213,6 +217,8 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--page-title);
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .section-features {
@@ -232,7 +238,8 @@ p {
   height: 101px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .block-item {
@@ -243,6 +250,7 @@ p {
   display: flex;
   justify-content: center;
   margin-bottom: 188px;
+  padding-top: 94px;
 }
 
 .what-we-do-item {
@@ -253,6 +261,7 @@ p {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  padding-top: 94px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -263,18 +272,25 @@ p {
 }
 
 .card-background {
-  position: absolute;
   width: 270px;
   height: 368px;
   color: var(--page-title);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  border-top: none;
+}
+
+.container-team {
+  width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
 }
 
 .team-item {
   flex-basis: calc((100% - 4 * 30px) / 4);
   text-align: center;
+  padding-left: 20px;
   margin-bottom: 94px;
 }
 
@@ -301,11 +317,11 @@ p {
 }
 
 .container-background {
-  position: absolute;
   width: 370px;
   height: 404px;
   background-color: var(--page-title);
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .card-set-item {
@@ -321,4 +337,5 @@ p {
 
 .block-adress {
   width: 231px;
+  margin-left: 215px;
 }
