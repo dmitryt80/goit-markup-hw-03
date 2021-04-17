@@ -158,11 +158,16 @@ p {
   margin-right: auto;
 }
 
-.section-filters {
+.filters-item {
+  margin-right: 8px;
 }
 
 .hero {
-  background-color: #757575;
+  display: flex;
+  align-items: center;
+  width: 1600px;
+  margin-bottom: 94px;
+  background-color: #2f303a;
 }
 
 .hero-button {
@@ -171,11 +176,12 @@ p {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--page-title);
   background-color: var(--accent-color);
+  display: block;
+  margin: 0 auto;
 }
 
 .button {
@@ -194,6 +200,7 @@ p {
 }
 
 .page-title {
+  margin: 452px, 200px, 280px;
   font-family: var(--title-font);
   font-size: 44px;
   line-height: 1.36;
@@ -213,9 +220,40 @@ p {
   color: var(--title-color);
 }
 
+.main-block {
+  display: flex;
+  justify-content: center;
+  width: 1170px;
+  height: 101px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+}
+
+.block-item {
+  margin-right: 30px;
+}
+
+.what-we-do {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 188px;
+}
+
+.what-we-do-item {
+  margin-right: 30px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .team-item {
-  flex-basis: calc((100% - 3 * 30px) / 4);
+  flex-basis: calc((100% - 4 * 30px) / 4);
   text-align: center;
+  margin-bottom: 94px;
 }
 
 .team-item-position {
