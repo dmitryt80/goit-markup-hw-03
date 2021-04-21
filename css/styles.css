@@ -52,7 +52,8 @@ p {
 }
 
 .nav {
-  margin-top: 32px;
+  display: flex;
+  justify-content: center;
   margin-right: auto;
 }
 .contacts {
@@ -85,6 +86,7 @@ p {
 
 .menu {
   display: inline-flex;
+  justify-content: center;
 }
 
 .menu-item:not(:last-child) {
@@ -116,6 +118,8 @@ p {
   margin-right: 30;
 }
 .logo {
+  display: block;
+  margin-right: 93px;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -241,12 +245,12 @@ p {
   justify-content: center;
 }
 
-.block-item {
+.block-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .section-what-we-do {
-  padding-bottom: 50px;
+  padding-bottom: 94px;
 }
 
 .what-we-do {
@@ -254,7 +258,7 @@ p {
   justify-content: center;
 }
 
-.what-we-do-item {
+.what-we-do-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -272,17 +276,11 @@ p {
 }
 
 .card-background {
-  width: 270px;
-  height: 368px;
   color: var(--page-title);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  border-top: none;
 }
 
 .section-team {
-  padding-top: 186px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -292,10 +290,13 @@ p {
   margin: 0 auto;
 }
 
-.team-item:not(:last-child) {
-  flex-basis: calc((100% - 2 * 30px) / 4);
-  text-align: center;
-  margin-right: 20px;
+.team-item {
+  display: block;
+  max-width: 100%;
+  margin: 30, 32, 30, 32;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-position {
