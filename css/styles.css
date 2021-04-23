@@ -49,6 +49,7 @@ p {
   justify-content: flex-start;
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-bottom: 94px;
 }
 
 .nav {
@@ -108,12 +109,14 @@ p {
 .card-set {
   display: flex;
   flex-wrap: wrap;
+  width: 1200px;
   padding: 0;
 }
 
-.item {
-  margin-top: 30;
-  margin-right: 30;
+.card-set-item {
+  max-width: 100%;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 .logo {
   display: block;
@@ -161,11 +164,11 @@ p {
 .container-filters {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 34px;
 }
 
 .filters-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 50px;
 }
 
 .hero {
@@ -194,6 +197,11 @@ p {
 }
 
 .button {
+  width: 145px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -273,9 +281,11 @@ p {
 
 .card-background {
   color: var(--page-title);
+  padding: 30px 32px;
 }
 
 .section-team {
+  background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -286,11 +296,10 @@ p {
   margin: 0 auto;
 }
 
-.team-item {
+.team-item:not(:last-child) {
   display: block;
   max-width: 100%;
-  margin-right: 20px;
-  margin-left: 0px;
+  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -304,6 +313,7 @@ p {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 8px;
 }
 
 .team-item-name {
@@ -312,6 +322,7 @@ p {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 8px;
 }
 
 .social-icons {
