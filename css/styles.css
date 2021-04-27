@@ -37,7 +37,7 @@ p {
   margin-top: 0;
 }
 
-.img {
+img {
   display: block;
   max-width: 100%;
 }
@@ -84,6 +84,7 @@ p {
   font-weight: 500;
   text-decoration: none;
 }
+
 .menu-link:hover,
 .menu-link:focus {
   color: var(--accent-color);
@@ -112,7 +113,6 @@ p {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  width: 1200px;
   padding: 0;
   margin-left: -30px;
   margin-top: -30px;
@@ -195,9 +195,9 @@ p {
 }
 
 .button {
-  width: 145px;
-  height: 38px;
+  padding: 6px 22px;
   border-radius: 4px;
+  border: none;
   background-color: #f5f4fa;
   font-family: Roboto;
   font-weight: 500;
@@ -342,12 +342,13 @@ p {
 }
 
 .section-portfolio {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container-background {
   background-color: var(--page-title);
-  padding: 10px 12px;
+  padding: 24px 20px;
 }
 
 .card-set-item {
